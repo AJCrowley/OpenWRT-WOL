@@ -2,6 +2,8 @@
 
 ## Wake on LAN python script for OpenWRT routers
 
+Just put the python script in the /root home directory.
+
 To install, make sure to:
 
 ```opkg install python3 etherwake```
