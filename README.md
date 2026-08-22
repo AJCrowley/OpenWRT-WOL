@@ -26,3 +26,5 @@ You can stop and query the status of the service with:
 
 Then simple attach your webhook to your routers IP like so: ```http://router:5050/wol?mac=ff:ff:ff:ff:ff```
 
+To use iPhone shortcuts to wake your computer, create a shortcut that uses SSH to log into your router, then call ```curl http://localhost:5050/wol?mac=ff:ff:ff:ff:ff```
+This will allow you to use Siri to call the shortcut with a command like, "Siri, boot PC", or however you name the shortcut.
