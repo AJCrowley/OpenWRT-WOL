@@ -1,2 +1,20 @@
 # OpenWRT-WOL
-Wake on LAN python script for OpenWRT routers
+
+## Wake on LAN python script for OpenWRT routers
+
+To install, make sure to:
+
+```opkg install python3 etherwake```
+
+Add the wol_service file to /etc/init.d, ```chmod +x /etc/init.d/wol_service```
+
+Then enable and start it with
+```/etc/init.d/wol_service enable
+/etc/init.d/wol_service start```
+
+You can stop and query the status of the service with:
+```/etc/init.d/wol_service status
+/etc/init.d/wol_service stop```
+
+Then simple attach your webhook to your routers IP like so: ```http://router:5050/wol?mac=ff:ff:ff:ff:ff```
+
