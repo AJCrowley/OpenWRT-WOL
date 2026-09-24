@@ -20,8 +20,8 @@ Then enable and start it with
 
 You can stop and query the status of the service with:
 ```
-/etc/init.d/wol_service status
-/etc/init.d/wol_service stop
+/etc/init.d/wol_server status
+/etc/init.d/wol_server stop
 ```
 
 Then simple attach your webhook to your routers IP like so: ```http://router:5050/wol?mac=ff:ff:ff:ff:ff```
